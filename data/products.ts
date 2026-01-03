@@ -6,6 +6,7 @@ export const products = [
     description: "La estrella en corrección anti imperfecciones, marcas y líneas de expresión: SVR Sebiaclear Serum es el aliado perfecto para mantener una piel bonita y sana. ¡Que tener piel grasa ya no te detenga!",
     image: "/images/SVRSebiaclearSerum30mLcaja.webp",
     requiresPrescription: false,
+    featured: true,
   },
   {
     id: "2",
@@ -14,6 +15,7 @@ export const products = [
     description: "Combate las imperfecciones y los signos de la edad en tu piel grasa con el serum SkinCeuticals Blemish+Age Defense. Fórmula especial para el acné adulto. ¡Consigue una piel radiante y sin imperfecciones!",
     image: "/images/MicrosoftTeams-image-13-scaled-1.webp",
     requiresPrescription: true,
+    featured: true,
   },
   {
     id: "3",
@@ -22,6 +24,7 @@ export const products = [
     description: "Que el brillo en tu rostro ya no sea un problema, con SVR Sebiaclear Mat-Pores lograrás disminuir tus poros y el brillo será menos visible. Que tener piel grasa ya no te detenga.",
     image: "/images/SVR_Sebiaclear_Mat_Pores_40mL.webp",
     requiresPrescription: false,
+    featured: true,
   },
   {
     id: "4",
@@ -30,6 +33,7 @@ export const products = [
     description: "La espuma Reve es un seboregulador a base de ácido salicílico, perfecto para complementar tu rutina diaria y decirle adiós a los puntos negros y el acné. Su presentación lo hace amigable para tu piel sin causar irritaciones. Además, es ideal tanto para pieles normales como grasas.",
     image: "/images/ReveOxidermicDoux.webp",
     requiresPrescription: false,
+    featured: true,
   },
   {
     id: "5",
@@ -38,6 +42,7 @@ export const products = [
     description: "¿Tienes piel grasa con tendencia acneica y quieres una piel limpia y radiante? ¡El Gel Limpiador SkinCeuticals LHA Cleanser Gel 240mL será tu aliado en tu rutina diaria de limpieza!",
     image: "/images/SkinCeuticalsLHACleanserGel240mL.webp",
     requiresPrescription: false,
+    featured: true,
   },
   {
     id: "6",
@@ -46,5 +51,6 @@ export const products = [
     description: "SVR Sebiaclear Creme SPF50 es un protector solar que previene el efecto rebote que se produce tras la exposición a los rayos UV, evitando imperfecciones y marcas. Además, es ideal corregir las imperfecciones en las pieles con tendencia a ser grasas o acneicas.",
     image: "/images/SVR_Sebiaclear_Creme_SPF50_40mL.webp",
     requiresPrescription: false,
+    featured: true,
   },
 ]

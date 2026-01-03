@@ -23,4 +23,28 @@ export const products = [
     image: "/images/SVR_Sebiaclear_Mat_Pores_40mL.webp",
     requiresPrescription: false,
   },
+  {
+    id: "4",
+    name: "Reve Oxidermic Espuma Dermolimpiadora 200mL",
+    price: 795,
+    description: "La espuma Reve es un seboregulador a base de ácido salicílico, perfecto para complementar tu rutina diaria y decirle adiós a los puntos negros y el acné. Su presentación lo hace amigable para tu piel sin causar irritaciones. Además, es ideal tanto para pieles normales como grasas.",
+    image: "/images/ReveOxidermicDoux.webp",
+    requiresPrescription: false,
+  },
+  {
+    id: "5",
+    name: "SkinCeuticals LHA Cleanser Gel 240mL",
+    price: 1270,
+    description: "¿Tienes piel grasa con tendencia acneica y quieres una piel limpia y radiante? ¡El Gel Limpiador SkinCeuticals LHA Cleanser Gel 240mL será tu aliado en tu rutina diaria de limpieza!",
+    image: "/images/SkinCeuticalsLHACleanserGel240mL.webp",
+    requiresPrescription: false,
+  },
+  {
+    id: "6",
+    name: "SVR Sebiaclear Creme SPF50 40mL",
+    price: 725,
+    description: "SVR Sebiaclear Creme SPF50 es un protector solar que previene el efecto rebote que se produce tras la exposición a los rayos UV, evitando imperfecciones y marcas. Además, es ideal corregir las imperfecciones en las pieles con tendencia a ser grasas o acneicas.",
+    image: "/images/SVR_Sebiaclear_Creme_SPF50_40mL.webp",
+    requiresPrescription: false,
+  },
 ]

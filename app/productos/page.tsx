@@ -1,5 +1,15 @@
+"use client"
+
 import ProductGrid from "@/components/ProductGrid"
-import ProductSlider from "@/components/ProductSlider"
+import { usePathname } from "next/navigation"
+// otras importaciones...
+
+function ProductSlider() {
+  const pathname = usePathname()
+  if (pathname !== "/") return null
+
+  // resto del componente (Swiper...)
+}
 
 export default function ProductosPage() {
   return (

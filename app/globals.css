@@ -193,9 +193,21 @@ body {
   margin-bottom: 1rem;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card strong {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #0e63ff;
+}
+
 .buy-btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: auto;
   padding: 0.75rem 1.5rem;
   background: #0e63ff;
   color: white;
@@ -268,6 +280,9 @@ body {
   padding: 3rem 1rem;
   background: #fff;
   padding-bottom: 3rem;
+  overflow: visible;
+  animation: fadeIn 1s ease-in-out;
+  transform: translateZ(0);
 }
 
 .product-slider h2 {

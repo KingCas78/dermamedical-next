@@ -16,7 +16,7 @@ export default function ProductCard({
       <img src={image} alt={name} />
       <h3>{name}</h3>
       <p>{description}</p>
-      <strong>{price}</strong>
+      <strong>${price}</strong>
 
       <a
         href="https://wa.me/521000000000"

@@ -1,13 +1,9 @@
 import ProductSlider from "@/components/ProductSlider"
-import HeroServices from "@/components/services/HeroServices";
 
 
 export default function Home() {
   return (
     <main>
-      {/* HERO de Servicios */}
-      <HeroServices />
-
       {/* ================= HERO ================= */}
       <section className="hero">
         <div className="hero-content">

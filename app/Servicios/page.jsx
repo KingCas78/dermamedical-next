@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import HeroServices from "@/components/services/HeroServices";
 import ServicesTabs from "@/components/services/ServicesTabs";
 import ServicesGrid from "@/components/services/ServicesGrid";

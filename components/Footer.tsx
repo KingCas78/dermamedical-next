@@ -3,8 +3,14 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h3>DermaMedical</h3>
-          <p>Dermatología pediátrica especializada</p>
+          <p> Dra. Erika Ramírez<br />
+              Especialidad en Dermatología pediátrica<br />
+              Dermamédical</p>
+
+<p className="legal">
+  La información de este sitio no sustituye una consulta médica.
+</p>
+
         </div>
 
         <div className="footer-contact">

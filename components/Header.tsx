@@ -3,12 +3,17 @@ export default function Header() {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          Derma<span>Medical</span>
+          <h1>Dra. Erika Ramírez</h1>
+          <span>Dermamédical</span>
         </div>
 
         <nav className="nav">
+          <a href="#inicio">Inicio</a>
           <a href="#productos">Medicamentos</a>
+          <a  href="#HeroServices">Servicios</a>
+          <a href="#nosotros">Nosotros</a>
           <a href="#contacto">Contacto</a>
+          <a href="#blog">Blog</a>
         </nav>
 
         <a href="tel:+521000000000" className="header-cta">

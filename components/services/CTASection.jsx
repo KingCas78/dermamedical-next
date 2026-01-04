@@ -1,0 +1,22 @@
+export default function CTASection() {
+  return (
+    <section className="w-full bg-white py-20 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        Agenda una consulta con la Dra. Erika
+      </h2>
+
+      <p className="text-gray-600 mt-4 max-w-xl mx-auto">
+        Recibe atención especializada y un diagnóstico preciso para el cuidado de la piel de tu hijo.
+      </p>
+
+      <div className="mt-8">
+        <a
+          href="#contacto"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-xl transition-all"
+        >
+          Agendar consulta
+        </a>
+      </div>
+    </section>
+  );
+}

@@ -10,8 +10,8 @@ export default function Header() {
         </div>
 {/*navegación*/}
         <nav className="nav">
-          <a href="#inicio">Inicio</a>
-          <a href="#productos">Medicamentos</a>
+          <Link href="/">Inicio</Link>
+          <Link href="/productos">Medicamentos</Link>
           <Link href="/Servicios">Servicios</Link>
           <a href="#nosotros">Nosotros</a>
           <a href="#contacto">Contacto</a>

@@ -23,6 +23,7 @@ export default function ProductSlider() {
         navigation
         pagination={{ clickable: true }}
         slidesPerView={1.2}
+        loop={true}   // 👈 habilita el loop infinito
         breakpoints={{
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },

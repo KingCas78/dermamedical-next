@@ -9,7 +9,6 @@ export default function Home() {
       <Hero />
 
       {/* 1️⃣ Slider primero */}
-      <section style={{ background: "red", minHeight: 200 }}></section>
       <ProductSlider />
 
       {/* 2️⃣ Grid completo */}

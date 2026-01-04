@@ -12,7 +12,7 @@ export default function Header() {
         <nav className="nav">
           <a href="#inicio">Inicio</a>
           <a href="#productos">Medicamentos</a>
-          <a  href="#servicios">Servicios</a>
+          <Link href="/Servicios">Servicios</Link>
           <a href="#nosotros">Nosotros</a>
           <a href="#contacto">Contacto</a>
           <a href="#blog">Blog</a>

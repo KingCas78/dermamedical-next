@@ -27,7 +27,7 @@ export default function ProductSlider() {
         autoplay={{
           delay: 3000,                // tiempo entre cada slide (3 segundos)
           disableOnInteraction: false, // sigue el autoplay aunque el usuario interactúe
-          pauseOnMouseEnter: true,     // 👈 se pausa al pasar el mouse encima
+          pauseOnMouseEnter: false,    // evitar que se pause al pasar el mouse encima
         }}
         breakpoints={{
           640: { slidesPerView: 2 },

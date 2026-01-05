@@ -97,10 +97,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-img {
-  border-radius: 0.75rem; /* equivalente a rounded-xl */
-}
-
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 6px;

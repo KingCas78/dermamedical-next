@@ -43,12 +43,14 @@ export default function Home() {
       </section>
 
       {/* ============ BANNER FULL-WIDTH ============ */}
-      <section className="relative w-full h-[260px] md:h-[360px]">
+      <section className="relative w-full h-[260px] md:h-[360px] lg:h-[400px] overflow-hidden">
         <Image
           src="/images/dermapedia-banner.png"
           alt="Banner Dermamédical"
           fill
-          className="object-cover"
+          className="object-cover object-center"
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
         />
       </section>
 
@@ -103,7 +105,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============== NOSOTROS ============== */}
+      {/* ============== Sobre la Dra. ============== */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
 

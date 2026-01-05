@@ -47,7 +47,7 @@ export default function Home() {
       <section className="full-bleed">
         <div className="banner-wrapper">
           <Image
-            src="/images/dermapedia-banner.jpg"
+            src="/images/dermapedia-banner.png"
             alt="Banner Dermamédical"
             fill
             className="object-cover"

@@ -95,7 +95,7 @@ export default function Home() {
         <div className="mt-8">
             <a
               href="#contacto"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition-all"
+              className="btn btn-primary"
             >
               Agendar consulta
             </a>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function EducationalSection() {
   const items = [
     "Brotes recurrentes o irritaciones persistentes",
@@ -27,9 +29,11 @@ export default function EducationalSection() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <Image
             src="/images/dermapedia-educacion.jpg"
             alt="Educación dermatológica"
+            width={600}
+            height={450}
             className="w-full max-w-sm object-contain rounded-xl shadow-lg"
           />
         </div>

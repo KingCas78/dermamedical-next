@@ -100,13 +100,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
           {/* Columna izquierda: Texto */}
           <div>
-            <h2 className="about-title">Sobre la Dra. Erika Ramírez</h2>
+            <h2 className="about-title">Sobre la Dra. Erika Ramírez Cortés</h2>
             
             <p className="about-intro">
-              Médica Cirujana por la Universidad La Salle
+              Dermatóloga pediatra con más de 20 años de experiencia
             </p>
 
             <ul className="about-list">
+              <li> Médica Cirujana por la Universidad La Salle</li>
               <li>Pediatra por el Hospital Pediátrico de Sinaloa Dr. Rigoberto Aguilar Pico</li>
               <li>Dermatóloga Pediatra egresada del Hospital Infantil de México Federico Gómez</li>
               <li>Adscrita a Dermatología del Hospital Infantil Privado Star Médica</li>

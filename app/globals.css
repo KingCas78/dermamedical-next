@@ -345,6 +345,22 @@ body {
   height: auto;
 }
 
+/* Global Image Styles */
+img,
+.site-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Optional smaller variant */
+.site-image--sm {
+  border-radius: 8px;
+  max-width: 360px;
+}
+
 /* Services Section */
 .services {
   padding: 4rem 2rem;

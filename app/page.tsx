@@ -46,8 +46,8 @@ export default function Home() {
       {/* ============ BANNER FULL-WIDTH ============ */}
       <section className="full-bleed">
         <div className="banner-wrapper">
-          <Image
-            src="/images/dermapedia-banner.png"
+            <Image
+              src="/images/dermapedia-banner.png"
             alt="Banner Dermamédical"
             fill
             className="object-cover"

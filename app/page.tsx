@@ -43,12 +43,12 @@ export default function Home() {
       </section>
 
       {/* ============ BANNER FULL-WIDTH ============ */}
-      <section className="relative w-full h-[260px] md:h-[360px] lg:h-[400px] overflow-hidden">
+      <section className="relative w-full h-[260px] md:h-[360px] lg:h-[420px] bg-gradient-to-r from-blue-600 to-blue-400 overflow-hidden flex items-center justify-center">
         <Image
           src="/images/dermapedia-banner.png"
           alt="Banner Dermamédical"
           fill
-          className="object-cover object-center"
+          className="object-contain object-center"
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
         />

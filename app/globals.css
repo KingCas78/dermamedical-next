@@ -436,6 +436,15 @@ img,
   max-width: 360px;
 }
 
+/* Ensure slider product images are uniform size */
+.product-slider .product-card .site-image,
+.product-slider .product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 /* Services Section */
 .services {
   padding: 4rem 2rem;

@@ -2,7 +2,7 @@ export default function CTASection() {
   return (
     <section className="w-full bg-white py-20 text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Agenda una consulta con la Dra. Erika
+        Agenda una consulta con la Dra. Erika Ramírez
       </h2>
 
       <p className="text-gray-600 mt-4 max-w-xl mx-auto">

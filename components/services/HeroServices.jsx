@@ -1,4 +1,5 @@
 // components/services/HeroServices.jsx
+import Image from "next/image";
 
 export default function HeroServices() {
   return (
@@ -27,10 +28,12 @@ export default function HeroServices() {
 
         {/* Columna derecha */}
         <div className="flex justify-center md:justify-end">
-          <img
+          <Image
             src="/images/dermapedia-hero.jpg"
             alt="Dermatología pediátrica"
-            className="w-full max-w-md object-contain rounded-xl shadow-lg"
+            width={420}
+            height={320}
+            className="site-image"
           />
         </div>
 

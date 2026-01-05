@@ -5,6 +5,8 @@ type Product = {
   image: string;
 };
 
+import Image from "next/image";
+
 export default function ProductCard({
   name,
   price,
@@ -13,7 +15,7 @@ export default function ProductCard({
 }: Product) {
   return (
     <div className="product-card">
-      <img src={image} alt={name} />
+      <Image src={image} alt={name} width={300} height={160} className="site-image site-image--sm" />
       <h3>{name}</h3>
       <p>{description}</p>
       <strong>${price}</strong>

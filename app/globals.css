@@ -343,6 +343,16 @@ body {
 
 .swiper-slide {
   height: auto;
+  display: flex;                /* asegura que el contenido pueda estirarse */
+}
+
+.product-slider .swiper-slide > * {
+  width: 100%;                  /* ocupa todo el ancho disponible */
+  height: 100%;                 /* fuerza a las tarjetas a igualar alturas */
+}
+
+.product-slider .product-card {
+  height: 100%;                 /* cards con altura uniforme dentro del slide */
 }
 
 /* Full-bleed banner image */

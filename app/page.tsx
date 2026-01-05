@@ -95,6 +95,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============== NOSOTROS ============== */}
+      <section className="about-section">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="about-title">Sobre la Dra. Erika Ramírez</h2>
+          
+          <div className="about-content">
+            <p className="about-intro">
+              Médica Cirujana por la Universidad La Salle
+            </p>
+
+            <ul className="about-list">
+              <li>Pediatra por el Hospital Pediátrico de Sinaloa Dr. Rigoberto Aguilar Pico</li>
+              <li>Dermatóloga Pediatra egresada del Hospital Infantil de México Federico Gómez</li>
+              <li>Adscrita a Dermatología del Hospital Infantil Privado Star Médica</li>
+              <li>Profesor asociado al Curso de especialización en pediatría del Hospital Infantil Privado Star Médica</li>
+              <li>Maestría en Ciencias Médicas</li>
+              <li>Socio Activo de la Academia Mexicana de Dermatología y de la Sociedad Mexicana de Dermatología</li>
+              <li>Tesorera del Colegio Mexicano de Dermatología Pediátrica</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ============== PRODUCTOS ============== */}
       <section className="products">
         <h2>Productos dermatológicos</h2>

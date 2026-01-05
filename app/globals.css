@@ -368,6 +368,58 @@ body {
   object-fit: cover;
 }
 
+/* About Section */
+.about-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.about-content {
+  background: linear-gradient(135deg, #f0f9ff 0%, #f7f9fb 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid #0e63ff;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  color: #0e63ff;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-list li {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.about-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #0e63ff;
+  font-weight: bold;
+}
+
 /* Global Image Styles */
 img,
 .site-image {

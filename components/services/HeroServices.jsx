@@ -28,7 +28,7 @@ export default function HeroServices() {
         {/* Columna derecha */}
         <div className="flex justify-center md:justify-end">
           <img
-            src="/images/dermapedia-hero.png"
+            src="/images/dermapedia-hero.jpg"
             alt="Dermatología pediátrica"
             className="w-full max-w-md object-contain"
           />

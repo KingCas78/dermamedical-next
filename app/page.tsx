@@ -6,34 +6,40 @@ export default function Home() {
   return (
     <main>
       {/* ================= HERO ================= */}
-      <section className="hero">
-        <div className="hero-content">
-          <h1>
-            Dermatología pediátrica<br />
-            con atención profesional y humana
-          </h1>
+      <section className="w-full bg-gradient-to-br from-blue-50 to-white py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+          {/* Columna izquierda: Texto y CTA */}
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+              Dermatología pediátrica<br />
+              con atención profesional y humana
+            </h1>
 
-          <p className="hero-subtitle">
-            Dra. Erika Ramírez · Venta de medicamentos<br />
-            Diagnóstico, tratamiento y cuidado integral de la piel
-          </p>
-          <div className="mt-8">
-            <a
-              href="#contacto"
-              className="btn btn-primary"
-            >
-              Agendar consulta
-            </a>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
+              Dra. Erika Ramírez · Dermamédical<br />
+              Diagnóstico, tratamiento y cuidado integral de la piel
+            </p>
+
+            <div className="flex gap-4 flex-wrap">
+              <a
+                href="#contacto"
+                className="btn btn-primary"
+              >
+                Agendar consulta
+              </a>
+            </div>
           </div>
+
+          {/* Columna derecha: Imagen */}
           <div className="flex justify-center md:justify-end">
-          <Image
-            src="/images/dermapedia-portada.jpg"
-            alt="Dermatología pediátrica"
-            width={420}
-            height={320}
-            className="site-image"
-          />
-        </div>
+            <Image
+              src="/images/dermapedia-portada.jpg"
+              alt="Dermatología pediátrica"
+              width={480}
+              height={380}
+              className="site-image"
+            />
+          </div>
         </div>
       </section>
 

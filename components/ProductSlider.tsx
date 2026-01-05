@@ -102,9 +102,7 @@ export default function ProductSlider() {
           {/* Flecha izquierda */}
           <button
             onClick={scrollLeft}
-            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 
-                       bg-white shadow-lg w-12 h-12 rounded-full items-center justify-center
-                       hover:bg-gray-100 transition-all"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg w-12 h-12 rounded-full items-center justify-center hover:bg-gray-100 transition-all"
           >
             <span className="text-2xl text-gray-700">‹</span>
           </button>
@@ -144,9 +142,7 @@ export default function ProductSlider() {
           {/* Flecha derecha */}
           <button
             onClick={scrollRight}
-            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 
-                       bg-white shadow-lg w-12 h-12 rounded-full items-center justify-center
-                       hover:bg-gray-100 transition-all"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-lg w-12 h-12 rounded-full items-center justify-center hover:bg-gray-100 transition-all"
           >
             <span className="text-2xl text-gray-700">›</span>
           </button>

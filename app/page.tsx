@@ -43,6 +43,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ BANNER FULL-WIDTH ============ */}
+      <section className="full-bleed">
+        <div className="banner-wrapper">
+          <Image
+            src="/images/dermapedia-banner.jpg"
+            alt="Banner Dermamédical"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </section>
+
       {/* ============ BLOQUE CONFIANZA ============ */}
       <section className="trust">
         <p>
@@ -87,8 +99,7 @@ export default function Home() {
       <section className="products">
         <h2>Productos dermatológicos</h2>
         <p className="products-intro">
-          Productos seleccionados y recomendados por la Dra. Erika Ramírez
-          como apoyo al tratamiento dermatológico.
+          Productos para el apoyo al tratamiento dermatológico.
         </p>
 
         <ProductSlider />

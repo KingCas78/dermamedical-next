@@ -345,6 +345,29 @@ body {
   height: auto;
 }
 
+/* Full-bleed banner image */
+.full-bleed {
+  width: 100%;
+  margin: 0;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+@media (min-width: 768px) {
+  .banner-wrapper {
+    height: 420px;
+  }
+}
+
+.banner-wrapper .site-image,
+.banner-wrapper img {
+  object-fit: cover;
+}
+
 /* Global Image Styles */
 img,
 .site-image {

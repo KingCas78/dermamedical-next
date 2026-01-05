@@ -13,7 +13,7 @@ export default function EducationalSection() {
 
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            ¿Cuándo llevar a tu hijo al dermatólogo?
+            ¿Cuándo llevar a tu hijo al dermatólogo pediatra?
           </h2>
 
           <ul className="mt-6 space-y-4 text-gray-700">
@@ -28,9 +28,9 @@ export default function EducationalSection() {
 
         <div className="flex justify-center">
           <img
-            src="/images/dermapedia-educacion.png"
+            src="/images/dermapedia-educacion.jpg"
             alt="Educación dermatológica"
-            className="w-full max-w-sm object-contain"
+            className="w-full max-w-sm object-contain rounded-xl shadow-lg"
           />
         </div>
 

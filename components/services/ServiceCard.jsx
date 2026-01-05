@@ -14,6 +14,10 @@ export default function ServiceCard({ icon, title, description }) {
         >
           Agendar consulta →
         </a>
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-40 object-cover rounded-xl"/>
       </div>
     </div>
   );

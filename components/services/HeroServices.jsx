@@ -30,7 +30,7 @@ export default function HeroServices() {
           <img
             src="/images/dermapedia-hero.jpg"
             alt="Dermatología pediátrica"
-            className="w-full max-w-md object-contain"
+            className="w-full max-w-md object-contain rounded-xl shadow-lg"
           />
         </div>
 

@@ -6,7 +6,7 @@ export default function Home() {
     <main className="w-full">
 
       {/* ================= HERO ================= */}
-      <section className="w-full bg-gradient-to-br from-blue-50 to-white py-20">
+      <section className="w-full bg-gradient-to-br from-blue-50 to-white py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
 
           {/* Texto */}
@@ -16,14 +16,14 @@ export default function Home() {
               con atención profesional y humana
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl">
               Dra. Erika Ramírez · Dermamédical<br />
               Diagnóstico, tratamiento y cuidado integral de la piel
             </p>
 
             <a
               href="#contacto"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition-all"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg"
             >
               Agendar consulta
             </a>
@@ -36,7 +36,7 @@ export default function Home() {
               alt="Dermatología pediátrica"
               width={480}
               height={380}
-              className="rounded-xl object-cover"
+              className="rounded-xl object-cover shadow-lg"
             />
           </div>
         </div>
@@ -54,9 +54,12 @@ export default function Home() {
 
       {/* ============ BLOQUE CONFIANZA ============ */}
       <section className="py-20 bg-white text-center">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          Atención dermatológica de confianza
+        </h2>
+
         <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-          Atención dermatológica basada en evidencia médica,
-          con un enfoque personalizado para cada paciente.
+          Atención basada en evidencia médica, con un enfoque personalizado para cada paciente.
         </p>
 
         <ul className="mt-8 space-y-3 text-gray-700 text-lg">
@@ -124,6 +127,13 @@ export default function Home() {
               <li>• Miembro activo de la Academia Mexicana de Dermatología</li>
               <li>• Tesorera del Colegio Mexicano de Dermatología Pediátrica</li>
             </ul>
+
+            <a
+              href="/sobre"
+              className="inline-block mt-6 text-blue-600 font-semibold hover:underline"
+            >
+              Ver más sobre la doctora →
+            </a>
           </div>
 
           {/* Imagen */}
@@ -133,7 +143,7 @@ export default function Home() {
               alt="Dra. Erika Ramírez"
               width={360}
               height={480}
-              className="rounded-xl object-cover"
+              className="rounded-xl object-cover shadow-lg"
             />
           </div>
         </div>
@@ -155,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* ============== CTA FINAL ============== */}
-      <section className="py-20 bg-white text-center">
+      <section className="py-24 bg-white text-center border-t border-gray-100">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Cada piel es diferente
         </h2>
@@ -167,7 +177,7 @@ export default function Home() {
 
         <a
           href="#contacto"
-          className="inline-block mt-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-xl transition-all"
+          className="inline-block mt-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-xl transition-all shadow-md hover:shadow-lg"
         >
           Agendar consulta
         </a>

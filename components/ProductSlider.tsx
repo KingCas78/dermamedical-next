@@ -1,45 +1,34 @@
-"use client"
+"use client";
 
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination, Autoplay } from "swiper/modules"
-
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
-
-import { products } from "@/data/products"
-import ProductCard from "./ProductCard"
+import { usePathname } from "next/navigation";
+import ProductCard from "./ProductCard";
+import { products } from "@/data/products";
 
 export default function ProductSlider() {
-  const featuredProducts = products.filter(p => p.featured)
+  const pathname = usePathname();
+
+  // Mostrar solo en Home
+  if (pathname !== "/") return null;
 
   return (
-    <section className="product-slider">
-      <h2>Productos destacados</h2>
+    <section className="w-full bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
 
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={24}
-        navigation
-        pagination={{ clickable: true }}
-        slidesPerView={1.2}
-        loop={true}   // 👈 habilita el loop infinito
-        autoplay={{
-          delay: 3000,                // tiempo entre cada slide (3 segundos)
-          disableOnInteraction: false, // sigue el autoplay aunque el usuario interactúe
-          pauseOnMouseEnter: false,    // evitar que se pause al pasar el mouse encima
-        }}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {featuredProducts.map((product) => (
-          <SwiperSlide key={product.id}>
-            <ProductCard {...product} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <h2 className="text-3xl font-bold text-gray-900 mb-10">
+          Productos recomendados
+        </h2>
+
+        <div className="overflow-x-auto scrollbar-hide">
+          <div className="flex gap-6 min-w-max pb-4">
+            {products.map((product) => (
+              <div key={product.id} className="min-w-[280px] max-w-[280px]">
+                <ProductCard {...product} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
     </section>
-  )
+  );
 }

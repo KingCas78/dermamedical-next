@@ -6,21 +6,29 @@ export default function ServicesTabs({ active, onChange }) {
   ];
 
   return (
-    <div className="w-full bg-white py-10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex gap-4 flex-wrap">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => onChange(tab.id)}
-            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all ${
-              active === tab.id
-                ? "bg-blue-600 text-white"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
+    <div className="w-full bg-white py-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-wrap gap-4">
+
+        {tabs.map((tab) => {
+          const isActive = active === tab.id;
+
+          return (
+            <button
+              key={tab.id}
+              onClick={() => onChange(tab.id)}
+              className={`
+                px-8 py-3 rounded-full text-sm md:text-base font-semibold transition-all
+                ${isActive
+                  ? "bg-blue-600 text-white shadow-md hover:bg-blue-700"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }
+              `}
+            >
+              {tab.label}
+            </button>
+          );
+        })}
+
       </div>
     </div>
   );

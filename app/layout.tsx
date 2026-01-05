@@ -1,37 +1,28 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
-import WhatsAppFloating from "@/components/WhatsAppFloating";
 
-
-/* SEO Metadata configuration for the website */
-export const metadata: Metadata = {
-  title: "DermaMedical | Dermatología pediátrica en CDMX",
-  description:
-    "Consulta de dermatología pediátrica y venta de medicamentos dermatológicos. Atención profesional y responsable.",
-  keywords: [
-    "dermatología pediátrica",
-    "medicamentos dermatológicos",
-    "dermatólogo infantil",
-    "piel infantil",
-  ],
-  authors: [{ name: "DermaMedical" }],
-  robots: "index, follow",
+export const metadata = {
+  title: "Dermamédical – Dra. Erika Ramírez",
+  description: "Dermatología pediátrica y cuidado profesional de la piel.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body>
+      <body className="bg-white text-gray-900">
+
+        {/* HEADER GLOBAL */}
         <Header />
-        {children}
+
+        {/* CONTENIDO DE CADA PÁGINA */}
+        <main className="min-h-screen">
+          {children}
+        </main>
+
+        {/* FOOTER GLOBAL */}
         <Footer />
-        <WhatsAppFloating />
+
       </body>
     </html>
   );

@@ -10,31 +10,33 @@ export default function EducationalSection() {
   ];
 
   return (
-    <section className="w-full bg-blue-50 py-20">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+    <section className="w-full bg-blue-50 py-24">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
 
+        {/* Texto */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
             ¿Cuándo llevar a tu hijo al dermatólogo pediatra?
           </h2>
 
-          <ul className="mt-6 space-y-4 text-gray-700">
+          <ul className="mt-8 space-y-4 text-gray-700 text-lg">
             {items.map((item, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span className="text-blue-600 text-xl">•</span>
-                {item}
+              <li key={i} className="flex items-start gap-4">
+                <span className="text-blue-600 text-2xl leading-none">•</span>
+                <span className="leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="flex justify-center">
+        {/* Imagen */}
+        <div className="flex justify-center md:justify-end">
           <Image
             src="/images/dermapedia-educacion.jpg"
             alt="Educación dermatológica"
             width={600}
             height={450}
-            className="w-full max-w-sm object-contain rounded-xl shadow-lg"
+            className="w-full max-w-md rounded-xl shadow-xl object-cover"
           />
         </div>
 

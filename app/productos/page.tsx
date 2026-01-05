@@ -1,26 +1,21 @@
-"use client"
+"use client";
 
-import ProductGrid from "@/components/ProductGrid"
-import { usePathname } from "next/navigation"
-// otras importaciones...
-
-function ProductSlider() {
-  const pathname = usePathname()
-  if (pathname !== "/") return null
-
-  // resto del componente (Swiper...)
-}
+import ProductGrid from "@/components/ProductGrid";
 
 export default function ProductosPage() {
   return (
-    <main>
-      <h1>Medicamentos disponibles</h1>
+    <main className="w-full">
 
-      {/* Slider destacado */}
-      <ProductSlider />
+      <section className="w-full bg-blue-50 py-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+          Medicamentos disponibles
+        </h1>
+        <p className="text-gray-700 mt-4 text-lg max-w-2xl mx-auto">
+          Productos dermatológicos pediátricos con respaldo médico.
+        </p>
+      </section>
 
-      {/* Grid completo */}
       <ProductGrid />
     </main>
-  )
+  );
 }

@@ -112,6 +112,7 @@ export default function ProductSlider() {
             ref={sliderRef}
             onScroll={handleScroll}
             className="overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
+            style={{ height: 'auto', minHeight: '420px' }}
           >
             <div className="flex gap-6 min-w-max pb-4">
               {loopProducts.map((product, i) => {
@@ -121,9 +122,7 @@ export default function ProductSlider() {
                 return (
                   <div
                     key={i}
-                    className={`snap-center transition-all duration-300 
-                      min-w-[300px] max-w-[300px] md:min-w-[33%] md:max-w-[33%]
-                      ${
+                    className={`snap-center transition-all duration-300 min-w-[280px] max-w-[280px] ${
                         isActive
                           ? "scale-105 md:scale-110 z-10 shadow-xl"
                           : "scale-95 opacity-80"

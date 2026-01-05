@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -11,13 +12,22 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
 
         {/* LOGO */}
-        <div className="flex flex-col leading-tight">
-          <h1 className="text-xl font-bold text-gray-900">
-            Dra. Erika Ramírez
-          </h1>
-          <span className="text-sm text-gray-500">
-            Dermatóloga pediatra
-          </span>
+        <div className="flex items-center gap-3">
+          <Image
+            src="/images/logo.png"
+            alt="Logo Dermamédical"
+            width={50}
+            height={50}
+            className="rounded-lg object-contain"
+          />
+          <div className="flex flex-col leading-tight">
+            <h1 className="text-xl font-bold text-gray-900">
+              Dra. Erika Ramírez
+            </h1>
+            <span className="text-sm text-gray-500">
+              Dermatóloga pediatra
+            </span>
+          </div>
         </div>
 
         {/* NAV DESKTOP */}

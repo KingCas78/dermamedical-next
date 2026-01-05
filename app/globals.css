@@ -115,10 +115,55 @@ body {
   background: transparent;
 }
 
-.cta-consult {
+/* Trust Section */
+.trust {
   padding: 4rem 2rem;
-  background: #ffffff;
+  background: linear-gradient(135deg, #f7f9fb 0%, #ffffff 100%);
   text-align: center;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.trust p {
+  font-size: 1.2rem;
+  color: #374151;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.trust-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.trust-list li {
+  font-size: 1.05rem;
+  color: #1f2937;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.trust-list li::before {
+  content: "✔";
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.cta-final {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+  text-align: center;
+  border-top: 1px solid #cffafe;
 }
 
 

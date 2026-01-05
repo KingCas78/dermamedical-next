@@ -17,19 +17,14 @@ export default function Home() {
             Diagnóstico, tratamiento y cuidado integral de la piel
           </p>
 
-          <div className="hero-cta">
-            <a href="tel:5555555555" className="btn-primary">
-              📞 Agenda tu consulta
-            </a>
+          <div className="mt-8">
             <a
-              href="https://wa.me/525555555555"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
+              href="#contacto"
+              className="btn btn-primary"
             >
-              💬 WhatsApp
+              Agendar consulta
             </a>
-          </div>
+        </div>
         </div>
       </section>
 

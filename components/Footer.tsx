@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="text-white font-semibold text-lg leading-relaxed">
             Dra. Erika Ramírez<br />
             Especialidad en Dermatología pediátrica<br />
-            Dermamédical
+            Hospital Star Médica HIP
           </p>
 
           <p className="text-gray-400 text-sm mt-4">
@@ -25,7 +25,7 @@ export default function Footer() {
           <p>📍 Hospital Star Médica HIP – Hospital Infantil Privado</p>
           <p>Nueva York 7, Torre de consultorios, Piso 2, Consultorio 202</p>
           <p>📞 Tel: 5511078058</p>
-          <p>✉️ contacto@dermamedical.mx</p>
+          <p>✉️ contacto@dermapedia.mx</p>
         </div>
 
         {/* LEGAL */}
@@ -42,7 +42,7 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div className="text-center text-gray-500 text-sm mt-12 border-t border-gray-700 pt-6">
-        © {new Date().getFullYear()} DermaMedical. Todos los derechos reservados.
+        © {new Date().getFullYear()} Dra. Erika Ramírez. Todos los derechos reservados.
       </div>
     </footer>
   );

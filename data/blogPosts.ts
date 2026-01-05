@@ -5,7 +5,7 @@ export const blogPosts = [
     author: "Dra. Erika Ramírez",
     date: "11 Nov 2023",
     readTime: 2,
-    image: "/images/blog-verrugas.jpg",
+    image: "/images/blog-verrugas.png",
     excerpt:
       "Las verrugas son lesiones comunes en la infancia. Aquí te explico qué son, por qué aparecen y cuándo debes acudir al dermatólogo.",
     views: 597,
@@ -36,7 +36,7 @@ export const blogPosts = [
     author: "Dra. Erika Ramírez",
     date: "5 Ene 2024",
     readTime: 3,
-    image: "/images/blog-ronquido.jpg",
+    image: "/images/blog-ronquido.png",
     excerpt:
       "Dormir con la boca abierta no es normal en bebés. Puede indicar obstrucción respiratoria. Aquí te explico las causas más comunes.",
     views: 1021,
@@ -66,7 +66,7 @@ export const blogPosts = [
     author: "Dra. Erika Ramírez",
     date: "20 Dic 2023",
     readTime: 4,
-    image: "/images/blog-dermatitis.jpg",
+    image: "/images/blog-dermatitis.png",
     excerpt:
       "La dermatitis atópica es una de las enfermedades más comunes en la infancia. Te explico cómo identificarla y tratarla.",
     views: 842,

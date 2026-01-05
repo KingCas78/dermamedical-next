@@ -32,7 +32,7 @@ export default function Home() {
           {/* Imagen */}
           <div className="flex justify-center md:justify-end">
             <Image
-              src="/images/dermapedia-portada.jpg"
+              src="/images/dermapedia-portada.png"
               alt="Dermatología pediátrica"
               width={480}
               height={380}
@@ -43,14 +43,14 @@ export default function Home() {
       </section>
 
       {/* ============ BANNER FULL-WIDTH ============ */}
-      <section className="relative w-full h-[260px] md:h-[360px] lg:h-[420px] bg-gradient-to-r from-blue-600 to-blue-400 overflow-hidden flex items-center justify-center">
+      <section className="relative w-full flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-400 py-6 md:py-10">
         <Image
           src="/images/dermapedia-banner.png"
           alt="Banner Dermamédical"
-          fill
-          className="object-contain object-center"
+          width={900}
+          height={500}
+          className="w-full max-w-4xl h-auto object-cover rounded-lg"
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
         />
       </section>
 

@@ -1,11 +1,32 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import ProductCard from "./ProductCard";
 import { products } from "@/data/products";
 
 export default function ProductSlider() {
   const pathname = usePathname();
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  // Autoplay
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (!slider) return;
+
+    const scrollStep = 300; // pixels
+    const scrollInterval = 3000; // milliseconds
+
+    const interval = setInterval(() => {
+      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+        slider.scrollLeft = 0; // Reiniciar desde el inicio
+      } else {
+        slider.scrollLeft += scrollStep;
+      }
+    }, scrollInterval);
+
+    return () => clearInterval(interval);
+  }, []);
 
   // Mostrar solo en Home
   if (pathname !== "/") return null;
@@ -18,7 +39,7 @@ export default function ProductSlider() {
           Productos recomendados
         </h2>
 
-        <div className="overflow-x-auto scrollbar-hide">
+        <div ref={sliderRef} className="overflow-x-auto scrollbar-hide">
           <div className="flex gap-6 min-w-max pb-4">
             {products.map((product) => (
               <div key={product.id} className="min-w-[280px] max-w-[280px]">

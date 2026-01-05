@@ -24,7 +24,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
           <Link href="/" className="hover:text-blue-600 transition">Inicio</Link>
           <Link href="/productos" className="hover:text-blue-600 transition">Productos</Link>
-          <Link href="/servicios" className="hover:text-blue-600 transition">Servicios</Link>
+          <Link href="/Servicios" className="hover:text-blue-600 transition">Servicios</Link>
           <Link href="/sobre" className="hover:text-blue-600 transition">Sobre la doctora</Link>
           <Link href="/contacto" className="hover:text-blue-600 transition">Contacto</Link>
           <Link href="/blog" className="hover:text-blue-600 transition">Blog</Link>
@@ -62,7 +62,7 @@ export default function Header() {
               Productos
             </Link>
 
-            <Link href="/servicios" onClick={() => setOpen(false)} className="hover:text-blue-600 transition">
+            <Link href="/Servicios" onClick={() => setOpen(false)} className="hover:text-blue-600 transition">
               Servicios
             </Link>
 

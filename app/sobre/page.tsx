@@ -67,7 +67,7 @@ export default function SobrePage() {
           {/* Imagen secundaria opcional */}
           <div className="flex justify-center md:justify-end">
             <Image
-              src="/images/dermapedia-dra-erika-ramirez.png"
+              src="/images/dermapedia-dra-erika-ramirez-2.png"
               alt="Dra. Erika Ramírez"
               width={420}
               height={520}

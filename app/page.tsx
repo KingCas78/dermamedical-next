@@ -97,10 +97,11 @@ export default function Home() {
 
       {/* ============== NOSOTROS ============== */}
       <section className="about-section">
-        <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h2 className="about-title">Sobre la Dra. Erika Ramírez</h2>
-          
-          <div className="about-content">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+          {/* Columna izquierda: Texto */}
+          <div>
+            <h2 className="about-title">Sobre la Dra. Erika Ramírez</h2>
+            
             <p className="about-intro">
               Médica Cirujana por la Universidad La Salle
             </p>
@@ -114,7 +115,18 @@ export default function Home() {
               <li>Socio Activo de la Academia Mexicana de Dermatología y de la Sociedad Mexicana de Dermatología</li>
               <li>Tesorera del Colegio Mexicano de Dermatología Pediátrica</li>
             </ul>
-          </div>
+            </div>
+
+            {/* Columna derecha: Imagen */}
+            <div className="flex justify-center md:justify-end">
+              <Image
+                src="/images/dermapedia-dra-erika-ramirez.png"
+                alt="Dra. Erika Ramírez"
+                width={360}
+                height={480}
+                className="site-image"
+              />
+            </div>
         </div>
       </section>
 

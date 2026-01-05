@@ -24,6 +24,7 @@ export default function ProductCard({
         alt={name}
         width={300}
         height={160}
+        loading="lazy"
         className="rounded-xl object-cover w-full h-40 mb-6"
       />
 

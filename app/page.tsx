@@ -92,18 +92,13 @@ export default function Home() {
           para el cuidado de tu piel.
         </p>
 
-        <div className="cta-buttons">
-          <a
-            href="https://wa.me/525555555555"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            💬 Escríbenos por WhatsApp
-          </a>
-          <a href="tel:5555555555" className="btn-secondary">
-            📞 Llamar ahora
-          </a>
+        <div className="mt-8">
+            <a
+              href="#contacto"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition-all"
+            >
+              Agendar consulta
+            </a>
         </div>
       </section>
 

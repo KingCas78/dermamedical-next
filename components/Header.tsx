@@ -6,7 +6,7 @@ export default function Header() {
       <div className="header-container">
         <div className="logo">
           <h1>Dra. Erika Ramírez</h1>
-          <span>Dermatóloga peditra</span>
+          <span>Dermatóloga pediatra</span>
         </div>
 {/*navegación*/}
         <nav className="nav">

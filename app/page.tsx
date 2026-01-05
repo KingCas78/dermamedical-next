@@ -1,3 +1,4 @@
+import Image from "next/image"
 import ProductSlider from "@/components/ProductSlider"
 
 
@@ -13,10 +14,18 @@ export default function Home() {
           </h1>
 
           <p className="hero-subtitle">
-            Dra. Erika Ramírez · Dermamédical<br />
+            Dra. Erika Ramírez · Venta de medicamentos<br />
             Diagnóstico, tratamiento y cuidado integral de la piel
           </p>
-
+        <div className="flex justify-center md:justify-end">
+          <Image
+            src="/images/dermapedia-portada.jpg"
+            alt="Dermatología pediátrica"
+            width={420}
+            height={320}
+            className="site-image"
+          />
+        </div>
           <div className="mt-8">
             <a
               href="#contacto"

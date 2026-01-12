@@ -6,10 +6,6 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import ProductCard from "@/components/products/ProductCard";
 import { products } from "@/data/products";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 export default function ProductSlider() {
   const pathname = usePathname();
 

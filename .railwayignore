@@ -1,0 +1,12 @@
+.git
+.gitignore
+.next
+.turbo
+node_modules
+npm-debug.log
+README.md
+.env.local
+.env.*.local
+*.md
+tests
+coverage

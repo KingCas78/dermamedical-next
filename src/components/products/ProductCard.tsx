@@ -16,7 +16,7 @@ export default function ProductCard({
   mpLink,
 }: Product) {
   return (
-    <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all border border-gray-100 flex flex-col h-full">
+    <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all border border-gray-100 flex flex-col h-full min-h-[500px]">
       
       {/* Imagen */}
       <Image

@@ -1,3 +1,8 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+
 type Product = {
   name: string;
   price: number;
@@ -6,8 +11,6 @@ type Product = {
   mpLink: string;
 };
 
-import Image from "next/image";
-
 export default function ProductCard({
   name,
   price,
@@ -15,6 +18,8 @@ export default function ProductCard({
   image,
   mpLink,
 }: Product) {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all border border-gray-100 flex flex-col h-full min-h-[500px]">
       
@@ -32,7 +37,17 @@ export default function ProductCard({
       <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
 
       {/* Descripción - con altura limitada y scroll si es necesario */}
-      <p className="text-gray-600 mt-2 leading-relaxed flex-grow line-clamp-4">{description}</p>
+      <p className={`text-gray-600 mt-2 leading-relaxed flex-grow ${expanded ? "" : "line-clamp-4"}`}>
+        {description}
+      </p>
+
+      {/* Botón Leer más */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="text-blue-600 hover:text-blue-700 font-semibold text-sm mt-2 transition-colors"
+      >
+        {expanded ? "Leer menos" : "Leer más"}
+      </button>
 
       {/* Precio */}
       <strong className="text-blue-600 text-lg mt-4">${price}</strong>
